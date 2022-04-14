@@ -60,7 +60,7 @@ Please try again.
                 <tr>
                     <td class="auto-style4"></td>
                     <td>
-                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                     </td>
                     <td class="auto-style2"></td>
                 </tr>

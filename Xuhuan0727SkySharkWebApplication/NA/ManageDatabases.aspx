@@ -30,15 +30,20 @@
                     <td colspan="2">
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
                 </tr>
-                <tr><td></td><td></td><td></td></tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label></td>
+                    <td></td>
+                    <td></td>
+                </tr>
                 <tr>
                     <td colspan="3">
-                        <asp:Button ID="btnArchive" runat="server" Text="Archive information pertaining to flights that have departed." BackColor="Silver" BorderColor="Blue" Font-Names="Bookman Old Style" Width="524px" /></td>
+                        <asp:Button ID="btnArchive" runat="server" Text="Archive information pertaining to flights that have departed." BackColor="Silver" BorderColor="Blue" Font-Names="Bookman Old Style" Width="524px" OnClick="btnArchive_Click" /></td>
                 </tr>
                 <tr><td></td><td></td><td></td></tr>
                 <tr>
                     <td colspan="3">
-                        <asp:Button ID="btnUpdate" runat="server" Text="Update customer information for the frequent fliers program." BackColor="Silver" BorderColor="Blue" Font-Names="Bookman Old Style" Width="523px" /></td>
+                        <asp:Button ID="btnUpdate" runat="server" Text="Update customer information for the frequent fliers program." BackColor="Silver" BorderColor="Blue" Font-Names="Bookman Old Style" Width="523px" OnClick="btnUpdate_Click" /></td>
                 </tr>
             </table>
         </div>
