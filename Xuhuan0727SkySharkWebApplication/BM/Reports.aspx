@@ -37,7 +37,8 @@
                         <asp:Label ID="Label2" runat="server" Text="Generate a Flight usage report for all flights flown by airline"></asp:Label>
                     </td>
                     <td class="auto-style1">
-                        <asp:Button ID="Button1" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate" />
+                        <asp:Button ID="Button1" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate Flight Usage Report
+" OnClick="Button1_Click" />
                     </td>
                     <td class="auto-style1"></td>
                 </tr>
@@ -46,14 +47,15 @@
                         <asp:Label ID="Label3" runat="server" Text="Generate a customer affinity report for top 100 customers"></asp:Label>
                     </td>
                     <td>
-                        <asp:Button ID="Button2" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate" />
+                        <asp:Button ID="Button2" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate customer Affinity Report
+" OnClick="Button2_Click" />
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <asp:Label ID="Label4" runat="server" Text="Generate total revenue report from the month"></asp:Label>
-                        <asp:ListBox ID="ListBox1" runat="server">
+                        <asp:ListBox ID="lstMonth" runat="server">
                             <asp:ListItem>1</asp:ListItem>
                             <asp:ListItem>2</asp:ListItem>
                             <asp:ListItem>3</asp:ListItem>
@@ -67,7 +69,7 @@
                             <asp:ListItem Value="11"></asp:ListItem>
                             <asp:ListItem Value="12"></asp:ListItem>
                         </asp:ListBox>
-                        <asp:ListBox ID="ListBox2" runat="server">
+                        <asp:ListBox ID="lstYear" runat="server">
                             <asp:ListItem>2002</asp:ListItem>
                             <asp:ListItem>2003</asp:ListItem>
                             <asp:ListItem>2004</asp:ListItem>
@@ -78,7 +80,8 @@
                         </asp:ListBox>
                     </td>
                     <td>
-                        <asp:Button ID="Button3" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate" />
+                        <asp:Button ID="Button3" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate Revenue Report
+" OnClick="Button3_Click" />
                     </td>
                     <td></td>
                 </tr>
@@ -89,7 +92,7 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <asp:GridView ID="GridView1" runat="server">
+                        <asp:GridView ID="DataGrid1" runat="server">
                         </asp:GridView>
                     </td>
                 </tr>

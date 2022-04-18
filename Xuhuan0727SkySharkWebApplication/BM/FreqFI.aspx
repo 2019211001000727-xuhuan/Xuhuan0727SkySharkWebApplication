@@ -26,21 +26,53 @@
                     <td><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
                 </tr>
                 <tr>
-                    <td>text1<asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList></td>
-                    <td>Text2<asp:DropDownList ID="DropDownList2" runat="server">
-                        </asp:DropDownList>
-                        Text3</td>
+                    <td colspan="2">
+                        <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red" Font-Bold="True"></asp:Label></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Total number for times Follown</td>
                     <td>
-                        <asp:Button ID="Button1" runat="server" Text="Button" />
+                        <asp:DropDownList ID="listTimeFlown" runat="server">
+                            <asp:ListItem>1</asp:ListItem>
+                            <asp:ListItem>2</asp:ListItem>
+                            <asp:ListItem>3</asp:ListItem>
+                            <asp:ListItem>4</asp:ListItem>
+                            <asp:ListItem>5</asp:ListItem>
+                            <asp:ListItem>6</asp:ListItem>
+                            <asp:ListItem>7</asp:ListItem>
+                            <asp:ListItem>8</asp:ListItem>
+                            <asp:ListItem>9</asp:ListItem>
+                            <asp:ListItem>10</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td>Applicable discount percentage</td>
+                    <td>
+                        <asp:DropDownList ID="lstDisc1" runat="server">
+                            <asp:ListItem>5</asp:ListItem>
+                            <asp:ListItem>10</asp:ListItem>
+                            <asp:ListItem>15</asp:ListItem>
+                            <asp:ListItem>20</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Add" OnClick="Button1_Click" />
                     </td>
                 </tr>
                 <tr>
-                    <td>text1<asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList></td>
-                    <td>Text2<asp:DropDownList ID="DropDownList4" runat="server">
-                        </asp:DropDownList>
-                        Text3</td>
+                    <td>Customers who have paid more than a specified fare</td>
+                    <td><asp:TextBox ID="txtFare" runat="server"></asp:TextBox></td>
+                    <td>Applicable discount percentage</td>
                     <td>
-                        <asp:Button ID="Button2" runat="server" Text="Button" />
+                        <asp:DropDownList ID="lstDisc2" runat="server">
+                            <asp:ListItem>5</asp:ListItem>
+                            <asp:ListItem>10</asp:ListItem>
+                            <asp:ListItem>15</asp:ListItem>
+                            <asp:ListItem>20</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" Text="Add" OnClick="Button2_Click" />
                     </td>
                 </tr>
                 <tr>

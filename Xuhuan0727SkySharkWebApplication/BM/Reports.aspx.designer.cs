@@ -105,22 +105,22 @@ namespace Xuhuan0727SkySharkWebApplication.BM
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// ListBox1 控件。
+        /// lstMonth 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.ListBox lstMonth;
 
         /// <summary>
-        /// ListBox2 控件。
+        /// lstYear 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox2;
+        protected global::System.Web.UI.WebControls.ListBox lstYear;
 
         /// <summary>
         /// Button3 控件。
@@ -132,12 +132,12 @@ namespace Xuhuan0727SkySharkWebApplication.BM
         protected global::System.Web.UI.WebControls.Button Button3;
 
         /// <summary>
-        /// GridView1 控件。
+        /// DataGrid1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView DataGrid1;
     }
 }

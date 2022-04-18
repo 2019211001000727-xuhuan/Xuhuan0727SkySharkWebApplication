@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ConfirmRes.aspx.cs" Inherits="Xuhuan0727SkySharkWebApplication.LOB.ConfirmRes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">\
     Business Executive
+    <style type="text/css">
+        .auto-style1 {
+            height: 27px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <form id="form1" runat="server">
@@ -32,22 +37,26 @@
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ChangePassword.aspx">Change Password</asp:HyperLink></td>
                     <td>
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red" Font-Bold="True"></asp:Label></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="auto-style1">
                         <asp:Label ID="Label2" runat="server" Text="Ticket No"></asp:Label></td>
-                    <td>
+                    <td class="auto-style1">
                         <asp:TextBox ID="txtTNo" runat="server"></asp:TextBox>
                     </td>
-                    <td>
+                    <td class="auto-style1">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please specify a valid ticket number" ControlToValidate="txtTNo"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <asp:Button ID="btnCancel" runat="server" Text="Confirm Ticket" /></td>
+                        <asp:Button ID="btnConfirm" runat="server" Text="Confirm Ticket" OnClick="btnConfirm_Click" /></td>
                     <td></td>
                 </tr>
                 <tr>

@@ -16,11 +16,11 @@ namespace Xuhuan0727SkySharkWebApplication
         {
             if(Session["usrRole"] == null)
             {
-                Response.Redirect("..\\default.aspx");
+                Response.Redirect(".\\default.aspx");
             }
             if(!(Session["usrRole"].ToString() == "Admin"))
             {
-                Response.Redirect("..\\default.aspx");
+                Response.Redirect(".\\default.aspx");
             }
             else
             {
