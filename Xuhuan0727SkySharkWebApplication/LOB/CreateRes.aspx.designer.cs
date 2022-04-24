@@ -87,6 +87,15 @@ namespace Xuhuan0727SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
+        /// lblMessageStep1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessageStep1;
+
+        /// <summary>
         /// Label3 控件。
         /// </summary>
         /// <remarks>
@@ -96,13 +105,13 @@ namespace Xuhuan0727SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// txtFltNum 控件。
+        /// txtFltNo 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFltNum;
+        protected global::System.Web.UI.WebControls.TextBox txtFltNo;
 
         /// <summary>
         /// Label4 控件。
@@ -132,13 +141,13 @@ namespace Xuhuan0727SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// Cal1 控件。
+        /// Calendar1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Cal1;
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
 
         /// <summary>
         /// WizardStep2 控件。
@@ -267,6 +276,15 @@ namespace Xuhuan0727SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.TextBox txtDepTime;
 
         /// <summary>
+        /// WizardStep3 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.WizardStep WizardStep3;
+
+        /// <summary>
         /// Label11 控件。
         /// </summary>
         /// <remarks>
@@ -274,6 +292,15 @@ namespace Xuhuan0727SkySharkWebApplication.LOB
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label11;
+
+        /// <summary>
+        /// lblMessageStep3 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessageStep3;
 
         /// <summary>
         /// Label12 控件。
@@ -310,23 +337,5 @@ namespace Xuhuan0727SkySharkWebApplication.LOB
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEMail;
-
-        /// <summary>
-        /// btnCreate 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCreate;
-
-        /// <summary>
-        /// btnCancel 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }

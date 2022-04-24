@@ -39,9 +39,8 @@
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="3">
                         <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red" Font-Bold="True"></asp:Label></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
@@ -60,14 +59,8 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="3">
+                        <asp:Label ID="lblDetails" runat="server" Text="" ForeColor="Red" Font-Bold="True"></asp:Label></td>
                 </tr>
             </table>
         </div>

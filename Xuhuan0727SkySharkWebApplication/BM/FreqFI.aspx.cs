@@ -29,17 +29,21 @@ namespace Xuhuan0727SkySharkWebApplication.BM
                 SqlCommand cmd = new SqlCommand(insertSql, conn);
                 cmd.Parameters.AddWithValue(" @Discount", lstDisc1.SelectedItem.Text.Trim());
                 cmd.Parameters.AddWithValue("@TotalTimesFlown", listTimeFlown.SelectedItem.Text.Trim());
-                cmd.ExecuteNonQuery();
+                int n = cmd.ExecuteNonQuery();
+                conn.Close();
                 lblMessage.Text = "Record Added";
-                String selectSql = "SELECT * from dtFrequentFliers";
-                cmd = new SqlCommand(selectSql, conn);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataSet dataSet = new DataSet();
-                adapter.Fill(dataSet, "FrequentFliers");
-                DataView source = new DataView(dataSet.Tables["FrequentFliers"]);
+                conn.Open();
+                String selectSql = "select * from dtFrequentFliers";
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                SqlCommand cmd2 = new SqlCommand(selectSql, conn);
+                adapter.SelectCommand = cmd2;
+                DataSet dataset = new DataSet();
+                adapter.Fill(dataset, "FrequentFliers");
+                conn.Close();
+                DataView source = new DataView(dataset.Tables["FrequentFliers"]);
                 GridView1.DataSource = source;
                 GridView1.DataBind();
-                conn.Close();
+
             }
             catch (Exception ex)
             {
@@ -64,18 +68,22 @@ namespace Xuhuan0727SkySharkWebApplication.BM
                 SqlCommand cmd = new SqlCommand(insertSql, conn);
                 cmd.Parameters.AddWithValue("@Discount", lstDisc2.SelectedItem.Text.Trim());
                 cmd.Parameters.AddWithValue("@FareCollected", txtFare.Text.Trim());
-                cmd.ExecuteNonQuery();
-                lblMessage.Text = "Record Added";
-                String selectSql = "SELECT * from dtFrequentFliers";
-                cmd = new SqlCommand(selectSql, conn);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataSet dataSet = new DataSet();
-                adapter.Fill(dataSet, "FrequentFliers");
-                DataView source = new DataView(dataSet.Tables["FrequentFliers"]);
+                int n = cmd.ExecuteNonQuery();
+                conn.Close();
+                lblMessage.Text = "Record Added.";
+                conn.Open();
+                String selectSql = "select * from dtFrequentFliers";
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                SqlCommand cmd2 = new SqlCommand(selectSql, conn);
+                adapter.SelectCommand = cmd2;
+                DataSet dataset = new DataSet();
+                adapter.Fill(dataset, "FrequentFliers");
+                conn.Close();
+                DataView source = new DataView(dataset.Tables["FrequentFliers"]);
                 GridView1.DataSource = source;
                 GridView1.DataBind();
-                conn.Close(); 
-            }catch (Exception ex){
+            }
+            catch (Exception ex){
                 lblMessage.Text = ex.Message;
             }
         }

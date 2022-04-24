@@ -1,6 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="QueryStat.aspx.cs" Inherits="Xuhuan0727SkySharkWebApplication.LOB.QueryStat" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     Business Executive
+    <style type="text/css">
+        .auto-style1 {
+            width: 112px;
+        }
+    </style>
+    <style type="text/css">
+        .auto-style1 {
+            width: 10px;
+        }
+        .auto-style2 {
+            width: 87px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
@@ -49,11 +62,15 @@
                                     <asp:Label ID="Label2" runat="server" Text="Enquiry about the status of flighr"></asp:Label></td>
                             </tr>
                             <tr>
+                                <td colspan="2">
+                                <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red" Font-Bold="True"></asp:Label></td>
+                            </tr>
+                            <tr>
                                 <td><asp:Label ID="Label3" runat="server" Text="Flight Number"></asp:Label>
                                 </td>
                                 <td>
                                     <asp:TextBox ID="txtFlightNo" runat="server"></asp:TextBox></td>
-                                <td></td>
+                                <td class="auto-style2"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -63,7 +80,7 @@
                                         <asp:ListItem>Executive</asp:ListItem>
                                         <asp:ListItem>Business</asp:ListItem>
                                     </asp:ListBox></td>
-                                <td></td>
+                                <td class="auto-style2"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -71,13 +88,12 @@
                                 <td>
                                     <asp:Calendar ID="calDepDate" runat="server"></asp:Calendar>
                                 </td>
-                                <td></td>
+                                <td class="auto-style2"></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td>
-                                    <asp:Button ID="btnFStatSubmit" runat="server" Text="Submit" /></td>
+                                <td><asp:Button ID="btnQueryStatus" runat="server" Text="Query Status" OnClick="btnQueryStatus_Click" /></td>
+                                <td class="auto-style2"></td>
                             </tr>
                         </table>
                     </asp:WizardStep>
@@ -91,6 +107,10 @@
                                 <td></td>
                             </tr>
                             <tr>
+                                <td colspan="2">
+                                <asp:Label ID="lblTicketStatus" runat="server" Text="" ForeColor="Red" Font-Bold="True"></asp:Label></td>
+                            </tr>
+                            <tr>
                                 <td>
                                     <asp:Label ID="Label7" runat="server" Text="Ticket No"></asp:Label></td>
                                 <td>
@@ -100,7 +120,7 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <asp:Button ID="btnTStatSubmit" runat="server" Text="Submit" /></td>
+                                    <asp:Button ID="btnTStatSubmit" runat="server" Text="Submit" OnClick="btnTStatSubmit_Click" /></td>
                             </tr>
                         </table>
                     </asp:WizardStep>

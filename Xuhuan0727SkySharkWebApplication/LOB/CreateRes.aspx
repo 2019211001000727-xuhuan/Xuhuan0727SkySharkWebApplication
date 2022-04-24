@@ -56,10 +56,14 @@
                                 <td class="auto-style1"></td>
                             </tr>
                             <tr>
+                                <td colspan="3">
+                                <asp:Label ID="lblMessageStep1" runat="server" Text="" ForeColor="Red" Font-Bold="True"></asp:Label></td>
+                            </tr>
+                            <tr>
                                 <td>
                                     <asp:Label ID="Label3" runat="server" Text="Flight Number"></asp:Label></td>
                                 <td>
-                                    <asp:TextBox ID="txtFltNum" runat="server"></asp:TextBox></td>
+                                    <asp:TextBox ID="txtFltNo" runat="server"></asp:TextBox></td>
                                 <td class="auto-style1"></td>
                                 <td></td>
                             </tr>
@@ -68,8 +72,8 @@
                                     <asp:Label ID="Label4" runat="server" Text="Class"></asp:Label></td>
                                 <td>
                                     <asp:ListBox ID="lstClass" runat="server">
-                                        <asp:ListItem>Executive</asp:ListItem>
-                                        <asp:ListItem>Business</asp:ListItem>
+                                        <asp:ListItem Value="Exec">Executive</asp:ListItem>
+                                        <asp:ListItem Value="Busi">Business</asp:ListItem>
                                     </asp:ListBox></td>
                                 <td class="auto-style1"></td>
                                 <td></td>
@@ -78,7 +82,7 @@
                                 <td>
                                     <asp:Label ID="Label5" runat="server" Text="Date"></asp:Label></td>
                                 <td>
-                                    <asp:Calendar ID="Cal1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Double"></asp:Calendar>
+                                    <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Double"></asp:Calendar>
                                 </td>
                                 <td class="auto-style1"></td>
                                 <td></td>
@@ -152,12 +156,17 @@
                             </tr>
                         </table>
                     </asp:WizardStep>
-                    <asp:WizardStep runat="server" Title="Make Reservation">
+                    <asp:WizardStep ID="WizardStep3" runat="server" Title="Make Reservation">
                         <!-- for step 3 -->
                         <table>
                             <tr>
                                 <td colspan="3">
                                     <asp:Label ID="Label11" runat="server" Text="Step 3:Confirm Booking"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <asp:Label ID="lblMessageStep3" runat="server" Text="" ForeColor="Red" Font-Bold="true"></asp:Label></td>
+                                
                             </tr>
                             <tr>
                                 <td>
@@ -176,10 +185,8 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>
-                                    <asp:Button ID="btnCreate" runat="server" Text="Create" /><asp:Button ID="btnCancel" runat="server" Text="Cancel" /></td>
-                                <td></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td></td>
                             </tr>
                         </table>
